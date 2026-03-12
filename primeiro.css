@@ -1,0 +1,57 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo do site */
+body {
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+/* Container central */
+.container {
+  max-width: 600px;
+  padding: 20px;
+}
+
+/* Título */
+.title {
+  font-size: 48px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* Descrição */
+.description {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-bottom: 30px;
+}
+
+/* Links */
+.links a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  margin: 0 8px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+/* Hover dos botões */
+.links a:hover {
+  background: #fff;
+  color: #000;
+}
