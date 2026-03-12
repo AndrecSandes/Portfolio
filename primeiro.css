@@ -15,13 +15,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
   text-align: center;
 }
 
 /* Container central */
 .container {
-  max-width: 600px;
+  max-width: 1200px;
+  width: 100%;
   padding: 20px;
 }
 
@@ -54,4 +54,23 @@ body {
 .links a:hover {
   background: #fff;
   color: #000;
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  width: 100%;
+}
+
+/* imagem */
+.hero-image img {
+  width: 320px;
+  border-radius: 10px;
+}
+
+/* texto */
+.hero-text {
+  max-width: 500px;
+  text-align: left;
 }
