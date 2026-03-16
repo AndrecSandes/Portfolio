@@ -41,3 +41,19 @@ bar.style.width = rect.width + "px";
 });
 
 });
+
+const heroImg = document.querySelector(".hero-image img");
+
+window.addEventListener("scroll", () => {
+
+    const scrollY = window.scrollY;
+
+    if(scrollY > 32){
+        heroImg.style.opacity = "0";
+        heroImg.style.transform = "translateY(40px)";
+    } else {
+        heroImg.style.opacity = "1";
+        heroImg.style.transform = "translateY(0)";
+    }
+
+});
