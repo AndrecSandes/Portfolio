@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>André Sandes | Desenvolvedor</title>
 
     <meta name="description" content="Portfólio de André Sandes, desenvolvedor focado em criar soluções simples, rápidas e eficientes.">
@@ -29,51 +28,62 @@
         <div class="blur blur-cursor"></div>
     </div>
 
+    <!-- HAMBURGER MENU BUTTON (mobile only) -->
+    <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
     <header class="floating-header">
-        <nav class="menu">
-            <a href="#">Início</a>
-            <a href="#">Sobre</a>
-            <a href="#">Projetos</a>
-            <a href="#">Contato</a>
+        <nav class="menu" id="menu">
+            <a href="#inicio">Início</a>
+            <a href="#skills">Sobre</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
             <span class="menu-bar"></span>
         </nav>
     </header>
 
     <main class="container">
-        <section class="hero">
+        <section class="hero" id="inicio">
             <div class="hero-text">
                 <div class="bg-word">DESENVOLVEDOR</div>
 
                 <div class="intro">
                     <div class="intro-accent"></div>
+
                     <div class="intro-content">
                         <h1 class="intro-title">ANDRÉ SANDES</h1>
+
                         <p class="intro-description">
                             Desenvolvedor FullStack focado em criar soluções simples,
                             rápidas e eficientes, construindo interfaces modernas
                             e aplicações performáticas.
                         </p>
+
                         <span class="intro-story">PORTFÓLIO</span>
                     </div>
                 </div>
 
                 <div class="links">
                     <a href="https://github.com/" target="_blank" rel="noopener">
-                        <img src="githublogo.svg" alt="GitHub">
+                        <img src="icons/githublogo.svg" alt="GitHub">
                     </a>
+
                     <a href="https://linkedin.com/" target="_blank" rel="noopener">
-                        <img src="linkedin.png" alt="LinkedIn">
+                        <img src="icons/linkedin.png" alt="LinkedIn">
                     </a>
                 </div>
             </div>
 
             <div class="hero-image">
-                <img src="Adobe Express - file.png" alt="Foto de André Sandes" loading="lazy">
+                <img src="icons/Adobe Express - file.png" alt="Foto de André Sandes" loading="lazy">
             </div>
         </section>
     </main>
 
-    <section class="skills">
+    <section class="skills" id="skills">
         <div class="skills-wrapper">
             <h2 class="skills-title">MINHAS ESPECIALIDADES</h2>
 
@@ -81,6 +91,7 @@
 
                 <div class="skill-box">
                     <h3>Front-end</h3>
+
                     <div class="skill-grid">
                         <div class="skill-item">
                             <div class="skill-icon">
@@ -88,12 +99,14 @@
                             </div>
                             <span>HTML</span>
                         </div>
+
                         <div class="skill-item">
                             <div class="skill-icon">
                                 <img src="icons/CSS3.svg" alt="CSS">
                             </div>
                             <span>CSS</span>
                         </div>
+
                         <div class="skill-item">
                             <div class="skill-icon">
                                 <img src="icons/JavaScript.svg" alt="JavaScript">
@@ -105,6 +118,7 @@
 
                 <div class="skill-box">
                     <h3>Back-end</h3>
+
                     <div class="skill-grid">
                         <div class="skill-item">
                             <div class="skill-icon">
@@ -117,6 +131,7 @@
 
                 <div class="skill-box">
                     <h3>Banco de Dados</h3>
+
                     <div class="skill-grid">
                         <div class="skill-item">
                             <div class="skill-icon">
@@ -124,6 +139,7 @@
                             </div>
                             <span>MySQL</span>
                         </div>
+
                         <div class="skill-item">
                             <div class="skill-icon">
                                 <img src="icons/PostgresSQL.svg" alt="PostgreSQL">
@@ -135,6 +151,7 @@
 
                 <div class="skill-box">
                     <h3>Ferramentas</h3>
+
                     <div class="skill-grid">
                         <div class="skill-item">
                             <div class="skill-icon">
@@ -142,25 +159,33 @@
                             </div>
                             <span>Git</span>
                         </div>
+
                         <div class="skill-item">
                             <div class="skill-icon">
-                                <img src="githublogo.svg" alt="GitHub">
+                                <img src="icons/githublogo.svg" alt="GitHub">
                             </div>
                             <span>GitHub</span>
                         </div>
+
                         <div class="skill-item">
                             <div class="skill-icon">
                                 <img src="icons/Eclipse IDE.svg" alt="Eclipse">
                             </div>
                             <span>Eclipse</span>
                         </div>
-                        </div>
+
                         <div class="skill-item">
-                                <div class="skill-icon">
-                                    <img src="icons/Canva.svg" alt="Canva">
-                                </div>
-                                <span>Canva</span>
+                            <div class="skill-icon">
+                                <img src="icons/Canva.svg" alt="Canva">
+                            </div>
+                            <span>Canva</span>
                         </div>
+
+                        <div class="skill-item">
+                            <div class="skill-icon">
+                                <img src="icons/Visual Studio Code (VS Code).svg" alt="Visual Studio Code">
+                            </div>
+                            <span>VS Code</span>
                         </div>
                     </div>
                 </div>
@@ -169,7 +194,96 @@
         </div>
     </section>
 
-    <script src="javas.js"></script>
+    <section class="projects" id="projetos">
+        <div class="container">
+            <h2 class="projects-title">MEUS PROJETOS</h2>
 
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="icons/Cream Minimalist Laptop Mockup Promotion Instagram Post.png" alt="Preview do Projeto">
+                    </div>
+
+                    <div class="project-info">
+                        <h3>SportZone+</h3>
+                        <p>
+                            Plataforma desenvolvida com HTML, CSS e JavaScript para facilitar a busca por assessorias
+                            de treino de forma rápida e intuitiva.
+                        </p>
+
+                        <div class="project-links">
+                            <a href="https://github.com/luizkks15/Site.git" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image"></div>
+
+                    <div class="project-info">
+                        <h3>Projeto Java em Desenvolvimento</h3>
+                        <p>Projeto feito em Java para controle de Academias</p>
+
+                        <div class="project-links">
+                            <a href="https://github.com/AndrecSandes/projetoAcademia.git" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="certificates" id="certificados">
+        <h2 class="certificates-title">CERTIFICADOS E CONQUISTAS</h2>
+
+        <div class="certificates-container">
+            <div class="certificate-card oracle reveal">
+                <div class="cert-logo">
+                    <img src="icons/fundacaobradescologo.png" alt="Certificado">
+                </div>
+
+                <ul>
+                    <li>Projetos de Sistemas de TI</li>
+                    <button class="cert-btn">
+                        <a href="icons/CertificadoProjetosdeSistemasdeTIAndre.pdf" target="_blank">
+                            Ver Certificado
+                        </a>
+                    </button>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contato">
+        <h2 class="contact-title">CONTATO</h2>
+
+        <div class="contact-container">
+
+            <a href="mailto:cleudsonandre1615@gmail.com" class="contact-item">
+                <img src="icons/gmail.png" alt="Email">
+                <span>Email</span>
+            </a>
+
+            <a href="https://wa.me/5585991461564" target="_blank" class="contact-item">
+                <img src="icons/whatsapp.png" alt="WhatsApp">
+                <span>WhatsApp</span>
+            </a>
+
+            <a href="https://www.linkedin.com/in/andrecsandes" target="_blank" class="contact-item">
+                <img src="icons/linkedin.png" alt="LinkedIn">
+                <span>LinkedIn</span>
+            </a>
+
+        </div>
+
+        <a href="icons/CurriculoAndreSandes.pdf" download class="download-cv">
+            Baixar Currículo
+        </a>
+    </section>
+
+    <script src="javas.js"></script>
 </body>
+
 </html>
