@@ -33,12 +33,52 @@ const bar = document.querySelector(".menu-bar");
 
 menuLinks.forEach(link => {
     link.addEventListener("mouseenter", () => {
-        const rect = link.getBoundingClientRect();
-        const parentRect = menu.getBoundingClientRect();
-        bar.style.left = rect.left - parentRect.left + "px";
-        bar.style.width = rect.width + "px";
+        moveBarTo(link)
     });
 });
+menu.addEventListener("mouseleave", () => {
+    updateActiveOnScroll();
+});
+
+// ===========================
+// SCROLL SPY (barra acompanha scroll)
+// ===========================
+
+const sections = document.querySelectorAll("section");
+
+function moveBarTo(link) {
+    const rect = link.getBoundingClientRect();
+    const parentRect = menu.getBoundingClientRect();
+
+    bar.style.left = rect.left - parentRect.left + "px";
+    bar.style.width = rect.width + "px";
+}
+
+function updateActiveOnScroll() {
+    let current = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop - 250; 
+        const sectionHeight = section.offsetHeight;
+
+        if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+            current = section.getAttribute("id");
+        }
+    });
+
+    if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight - 10) {
+        current = "contato";
+    }
+
+    menuLinks.forEach(link => {
+        if (link.getAttribute("href") === "#" + current) {
+            moveBarTo(link);
+        }
+    });
+}
+
+window.addEventListener("scroll", updateActiveOnScroll);
+window.addEventListener("load", updateActiveOnScroll);
 
 /* ===========================
    HAMBURGER MENU (mobile)
